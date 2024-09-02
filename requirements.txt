@@ -1,0 +1,13 @@
+torch
+transformers
+langchain
+chromadb
+datasets
+transformers==4.44.2 
+bitsandbytes
+accelerate
+langchain-community
+scikit-learn
+numpy
+pandas
+tqdm
