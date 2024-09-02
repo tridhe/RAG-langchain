@@ -69,6 +69,21 @@ Or, if you are using a Jupyter Notebook, you can use:
 ```
 The first run will take more time compared to the subsequent runs.
 
+
+### 4. Evaluate the RAG System
+
+To evaluate the RAG system, use the following command:
+
+```bash
+python evaluate.py
+```
+
+Or, if you are using a Jupyter Notebook, you can use:
+
+```python
+%run evaluate.py
+```
+
 ## Detailed Steps
 
 ### Data Loading and Preprocessing
