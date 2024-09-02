@@ -42,7 +42,7 @@ The project is organized into multiple Python files, each responsible for a spec
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/rag-system.git
+git clone https://github.com/tridhe/RAG-langchain.git
 cd rag-system
 ```
 
