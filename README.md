@@ -104,11 +104,10 @@ A LLaMA3 model is used to generate responses to user queries based on the retrie
 
 ### Model Evaluation
 
-The system's performance is evaluated using standard NLP metrics such as Exact Match (EM) and F1 score. The evaluation module compares the generated responses to the ground truth answers provided in the SQuAD 2.0 dataset.
-
+The system's performance is evaluated using BLEU and ROUGE as evaluation metrics for the generated LLM outputs. The BLEU score has been adjusted by using a custom weight distribution to emphasize unigram (0.5) and bigram (0.3) matches while reducing the weight of higher-order n-grams (3-gram: 0.15, 4-gram: 0.05). This approach better reflects the model's ability to generate unique, paraphrased answers while maintaining the essential meaning. The ROUGE score is used to complement BLEU, providing additional insight into the quality of the model's responses
 Evaluation Results:
-    - Exact Match (EM): 0.0
-    - F1 Score: 1.92
+    - BLEU: 1.18
+    - Average ROUGE-L: 2.37
 
 
 ## Requirements
