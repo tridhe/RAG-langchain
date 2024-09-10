@@ -20,8 +20,10 @@ def compute_bleu(prediction: str, ground_truth: str) -> float:
     
     if not prediction_tokens or not ground_truth_tokens:
         return 0.0
-
-    return sentence_bleu([ground_truth_tokens], prediction_tokens)
+        
+    weights = (0.5, 0.3, 0.15, 0.05)
+    
+    return sentence_bleu([ground_truth_tokens], prediction_tokens, weights=weights)
 
 def compute_rouge(prediction: str, ground_truth: str) -> dict:
 

@@ -3,8 +3,7 @@ from data.data_processing import load_and_preprocess_data
 from embeddings.embedding_generator import EmbeddingGenerator
 from indexing.chroma_indexing import ChromaIndexing
 from indexing.langchain_setup import setup_langchain_chroma
-from models.llama_model import LlamaModel
-from models.inference import load_llama_model, generate_response, load_saved_model, save_model
+from models.inference import load_llama_model, load_saved_model, save_model
 from evaluation.evaluation_metrics import evaluate_model
 
 def main():
